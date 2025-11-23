@@ -1,0 +1,38 @@
+.mainText {
+  margin: 0px;
+  padding-left: 3vw;
+  padding-top: 6vh;
+}
+
+.rember {
+  font-size: 5em;
+}
+
+.dreams {
+  font-size: 5em;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.build {
+  font-size: 3em;
+}
+
+/*+++++++++++++++++ MEDIA QUERIES +++++++++++++++++*/
+
+/* Tablet & below */
+@media (max-width: 768px) {
+  .rember {
+    font-size: clamp(1vw, 12vw, 5em);
+  }
+
+  .dreams {
+    font-size: clamp(1vw, 12vw, 5em);
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  .build {
+    font-size: clamp(1vw, 8vw, 5em);
+  }
+}

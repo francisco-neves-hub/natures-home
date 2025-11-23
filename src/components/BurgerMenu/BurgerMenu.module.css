@@ -1,0 +1,42 @@
+.visible {
+  position: absolute;
+  top: 0.5vh;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.menu {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 0px;
+}
+
+.menu a {
+  all: unset;
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-size: 3vw;
+  height: fit-content;
+  text-align: center;
+  padding: 5px 15px;
+}
+
+.menu a:hover,
+.menu a.active {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 0.01px;
+}

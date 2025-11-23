@@ -1,0 +1,109 @@
+.article {
+  padding: 0px;
+  margin: 0px;
+  margin-top: 6em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.photo {
+  margin: 0px;
+  padding: 0px;
+  width: 95%;
+  line-height: 0;
+
+  background: white;
+  padding: 10px;
+  border: 1px solid rgba(25, 16, 4, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.photo img {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  margin: 0px;
+  padding: 0px;
+  align-items: center;
+}
+
+.text h3 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin: 0px;
+}
+
+.text p {
+  margin: 0px;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 1.4em;
+  padding-bottom: 1.4em;
+  line-height: 1.5;
+}
+
+.last {
+  margin-bottom: 4em;
+}
+
+.load {
+  height: 100vh;
+}
+
+.loading{
+  margin-top: 1em;
+}
+
+/*+++++++++++++++++ MEDIA QUERIES +++++++++++++++++*/
+
+/* Below Laptop Screen */
+@media (max-width: 992px) {
+  .article {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo {
+    order: -1;
+  }
+
+  .text {
+    order: 0;
+  }
+
+  .last {
+  margin-bottom: 4em;
+}
+}
+
+/* Below Small Screen */
+@media only screen and (max-width: 768px) {
+
+  .text p {
+  margin: 0px;
+  padding-left: 7vw;
+  padding-right: 7vw;
+  padding-top: 0;
+  padding-bottom: 1.4em;
+  line-height: 1.5;
+}
+
+.last {
+  margin-bottom: 4em;
+}
+
+}

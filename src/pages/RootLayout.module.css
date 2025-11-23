@@ -1,0 +1,27 @@
+.bgImage {
+  background-image: url("../assets/images/photos/home-bg-4-2-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.bgColor {
+  background-color: #f8efe3;
+  height: 100%;
+  width: 100%;
+}
+
+.frame {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.outlet {
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+  flex: 1;
+}
