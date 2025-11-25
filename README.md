@@ -1,12 +1,45 @@
-# React + Vite
+# Nature's Home Front-end
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Front-end project, built as a Single Page Application using React, for a fictional construction company called Nature's Home. The project was created and works in Vite, with Hot Module Replacement and some ESLint rules.
 
-Currently, two official plugins are available:
+# Project Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+├── dist
+│   ├── assets
+│   ├── index.html
+│   └── vite.svg
+├── public
+│   └── vite.svg
+├── src
+│   ├── assets
+│   ├── components
+│   ├── helpers
+│   ├── layout
+│   ├── pages
+│   ├── store
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── README.md
+└── vite.config.js
 
-## Expanding the ESLint configuration
+Here is a brief description of each content inside the src folder:
+    - assets: folder containing the necessary media for the website
+    - components: folder containing reusable custom React components
+    - helpers: folder containing helper functions used throughout the rest of the project
+    - layout: folder containing React components used in every page, composing the static layout
+    - pages: folder containing the React components that represent the website pages
+    - store: folder containing context functions
+    - App.jsx: file creating the routing and initializing additional services
+    - index.css: global CSS file
+    - main.jsx: initial React component
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Run
+
+    Run `npm install` to install the project dependencies.
+    Run `npm run dev` to host the project locally.
